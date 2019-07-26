@@ -37,6 +37,7 @@ function MapsWave(props) {
     <Wave
       columnComponents={[MapsSticker, BarScroller]}
       childrenToStepColumns={childrenToColumns}
+      variant="sidebar"
       {...props}
     />
   )

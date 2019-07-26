@@ -1,23 +1,44 @@
 import React from "react"
-import { ThemeProvider, Container, Styled } from "theme-ui"
+import { ThemeProvider, Container, Styled, Main } from "theme-ui"
 import { roboto } from "@theme-ui/presets"
-import wavesVariants from "gatsby-theme-waves/src/gatsby-plugin-theme-ui/waves"
+import { Global } from "@emotion/core"
 
 import Header from "../header"
 
-const theme = {
-  ...roboto,
-  breakpoints: ["1000px"],
-  styles: {
-    waves: wavesVariants,
+import sidebarVariant from "./waves-variant"
+import deepmerge from "deepmerge"
+
+const theme = deepmerge(roboto, {
+  colors: {
+    background: "#121320",
+    text: "#fafafa",
+    primary: "salmon",
   },
+  styles: {
+    Container: {
+      width: ["100%", "500px"],
+      marginRight: [0, "40px"],
+    },
+    root: {
+      // display: "flex",
+      // background: "#121320",
+      color: "#fafafa",
+    },
+  },
+})
+
+theme.styles.waves = {
+  ...sidebarVariant,
 }
+
+theme.breakpoints = ["900px"]
 
 export default props => (
   <ThemeProvider theme={theme}>
+    <Global styles={{ body: { overfowX: "hidden", background: "#121320" } }} />
     <Styled.root>
       <Header codeUrl="https://github.com/pomber/gatsby-theme-waves/tree/master/demo/src/pages/maps" />
-      <Container>{props.children}</Container>
+      {props.children}
     </Styled.root>
   </ThemeProvider>
 )
