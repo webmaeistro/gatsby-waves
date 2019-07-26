@@ -13,7 +13,7 @@ export default ({ codeUrl }) => (
     }}
   >
     <Link to="/" sx={{ color: "primary" }}>
-      Demos Home
+      All Demos
     </Link>
     <Styled.a sx={{ paddingLeft: 3 }} href={codeUrl}>
       View Code

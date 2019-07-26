@@ -1,38 +1,43 @@
 export default {
-  default: {
+  sidebar: {
     Wave: {
       width: ["100%", "960px"],
       marginTop: "40px",
-      marginLeft: [0, "calc(50% - 480px)"],
+      marginLeft: 0,
       marginBottom: "40px",
       position: "relative",
       display: ["block", "flex"],
+      flexDirection: ["", "row-reverse"],
     },
     ScrollerContainer: {
-      flex: 1,
-      paddingLeft: [0, "50px"],
+      flex: [1, "500px"],
+      paddingLeft: 0,
+      marginRight: [0, "40px"],
       paddingTop: ["50px", 0],
     },
     ScrollerStep: {
       position: "relative",
-      padding: [0, "0 10px"],
+      padding: 0,
       minHeight: "250px",
       display: "flex",
       alignItems: "center",
-      borderLeft: ["none", "3px solid transparent"],
+      borderLeft: "none",
+      width: ["auto", "388px"],
     },
     ScrollerProgress: {
       position: "absolute",
-      left: ["-12px", "-3px"],
-      backgroundColor: "primary",
+      left: "-12px",
+      backgroundColor: "secondary",
     },
     StickerContainer: {
-      width: ["100vw", "50%"],
-      marginLeft: ["calc(50% - 50vw)", 0],
+      width: ["100vw", "40%"],
+      marginLeft: ["calc(50% - 50vw)", "40px"],
       position: ["sticky", "static"],
       top: [0, "auto"],
       zIndex: [1, "auto"],
       height: ["50vh", "auto"],
+      backgroundColor: "negativeBackground",
+      color: "negativeText",
     },
     Sticker: {
       position: ["static", "sticky"],

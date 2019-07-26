@@ -21,8 +21,8 @@ function getProgress(scroller, focusPoint) {
 function useFocusPoint(variant) {
   if (typeof window === "undefined") return false
   //TODO keep focus point in ref and update on window resize
-  const theme = useThemeUI()
-  const focus = theme.theme.styles.waves[variant].focus || [0.7, 0.5]
+  const { theme } = useThemeUI()
+  const focus = theme.styles.waves[variant].focus || [0.7, 0.5]
   //TODO find out how to get default breakpoints from theme-ui
   const breakpoint = theme.breakpoints ? theme.breakpoints[0] : "40em"
   let mql = window.matchMedia(`(min-width: ${breakpoint})`)

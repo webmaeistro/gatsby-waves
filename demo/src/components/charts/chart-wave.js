@@ -25,7 +25,7 @@ function toColumns(items, columnCount) {
   return columns
 }
 
-function MapsWave(props) {
+function ChartWave(props) {
   const childrenToColumns = children => {
     const items = React.Children.map(children, child => [child])
     const columnCount = 2
@@ -37,6 +37,7 @@ function MapsWave(props) {
     <Wave
       columnComponents={[ChartSticker, BarScroller]}
       childrenToStepColumns={childrenToColumns}
+      variant="sidebar"
       {...props}
     />
   )
@@ -52,9 +53,9 @@ function ChartSticker({ variant, steps, currentStep, progress }) {
             data={steps[currentStep]}
             margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
           >
-            <XAxis dataKey="x" />
-            <YAxis />
-            <Bar dataKey="y" fill={theme.colors.primary} />
+            <XAxis dataKey="x" stroke="currentColor" />
+            <YAxis stroke="currentColor" />
+            <Bar dataKey="y" fill={theme.colors.secondary} />
           </BarChart>
         </ResponsiveContainer>
       </div>
@@ -62,4 +63,4 @@ function ChartSticker({ variant, steps, currentStep, progress }) {
   )
 }
 
-export default MapsWave
+export default ChartWave
