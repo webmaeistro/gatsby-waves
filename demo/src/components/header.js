@@ -9,13 +9,14 @@ export default ({ codeUrl }) => (
       borderBottom: "1px solid",
       borderColor: "primary",
       paddingBottom: 1,
+      paddingLeft: 3,
     }}
   >
     <Link to="/" sx={{ color: "primary" }}>
-      Demos Home
+      All Demos
     </Link>
     <Styled.a sx={{ paddingLeft: 3 }} href={codeUrl}>
-      Demo Code
+      View Code
     </Styled.a>
   </Styled.div>
 )

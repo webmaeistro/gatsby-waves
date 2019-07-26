@@ -1,16 +1,17 @@
 import React from "react"
 import { ThemeProvider, Container, Styled } from "theme-ui"
 import { roboto } from "@theme-ui/presets"
+import wavesVariants from "gatsby-theme-waves/src/gatsby-plugin-theme-ui/waves"
 
 import Header from "../header"
 
-import wavesVariants from "gatsby-theme-waves/src/gatsby-plugin-theme-ui/waves"
-
 const theme = {
   ...roboto,
+  breakpoints: ["1000px"],
+  styles: {
+    waves: wavesVariants,
+  },
 }
-
-theme.styles.waves = wavesVariants
 
 export default props => (
   <ThemeProvider theme={theme}>
