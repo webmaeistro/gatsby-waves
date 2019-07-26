@@ -9,6 +9,7 @@ export default ({ codeUrl }) => (
       borderBottom: "1px solid",
       borderColor: "primary",
       paddingBottom: 1,
+      paddingLeft: 3,
     }}
   >
     <Link to="/" sx={{ color: "primary" }}>
