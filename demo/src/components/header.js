@@ -15,7 +15,7 @@ export default ({ codeUrl }) => (
       Demos Home
     </Link>
     <Styled.a sx={{ paddingLeft: 3 }} href={codeUrl}>
-      Demo Code
+      View Code
     </Styled.a>
   </Styled.div>
 )
