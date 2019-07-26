@@ -14,6 +14,9 @@ export default () => {
       <div>
         <Link to="/maps">Custom Maps Wave</Link>
       </div>
+      <div>
+        <Link to="/charts">Custom Charts Wave</Link>
+      </div>
     </div>
   )
 }
