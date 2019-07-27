@@ -2,7 +2,6 @@
 import { Main, Styled, Container, Header, jsx, ThemeProvider } from "theme-ui"
 import { roboto } from "@theme-ui/presets"
 import { Global } from "@emotion/core"
-import React from "react"
 import codeWebm from "./media/code.webm"
 import codeMp4 from "./media/code.mp4"
 import chartsWebm from "./media/charts.webm"
@@ -68,7 +67,10 @@ export default () => {
           >
             Gatsby Theme Waves
           </Styled.h1>
-          <Styled.a href="https://github.com/pomber/gatsby-theme-waves">
+          <Styled.a
+            href="https://github.com/pomber/gatsby-theme-waves"
+            sx={{ color: "rgba(20,20,20,0.8)", fontSize: [1, 3] }}
+          >
             GitHub
           </Styled.a>
         </Header>
