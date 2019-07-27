@@ -1,5 +1,5 @@
 import React from "react"
-import { ThemeProvider, Container, Styled, Main } from "theme-ui"
+import { ThemeProvider, Styled } from "theme-ui"
 import { roboto } from "@theme-ui/presets"
 import { Global } from "@emotion/core"
 
