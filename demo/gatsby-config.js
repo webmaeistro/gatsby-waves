@@ -31,5 +31,9 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: "gatsby-theme-mdx-deck",
+      options: { mdx: false, basePath: "decks" },
+    },
   ],
 }

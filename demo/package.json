@@ -20,15 +20,14 @@
     "gatsby": "^2.13.39",
     "gatsby-plugin-mdx": "^1.0.14",
     "gatsby-plugin-sharp": "^2.2.9",
-    "gatsby-plugin-theme-ui": "^0.2.6",
     "gatsby-remark-images": "^3.1.7",
     "gatsby-theme-blog": "^1.0.2",
+    "gatsby-theme-mdx-deck": "^3.0.7",
     "gatsby-theme-waves": "*",
     "pigeon-maps": "^0.13.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "recharts": "^1.6.2",
-    "theme-ui": "^0.2.14"
+    "recharts": "^1.6.2"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
