@@ -1,11 +1,11 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { jsx, ThemeProvider } from "theme-ui"
 import React from "react"
 import BarScroller from "gatsby-theme-waves/src/components/bar-scroller"
 import Wave from "gatsby-theme-waves/src/components/wave"
 import { useStaticQuery, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import { Embed } from "gatsby-theme-mdx-deck/src/components/embed"
+import { Embed } from "./embed"
 
 function toColumns(items, columnCount) {
   const columns = Array(columnCount)
@@ -29,7 +29,7 @@ function toColumns(items, columnCount) {
   return columns
 }
 
-function ImageWave(props) {
+function DeckWave(props) {
   const childrenToColumns = children => {
     const items = React.Children.map(children, child => [child])
     const columnCount = 2
@@ -69,4 +69,4 @@ function DeckSticker({ deck, progress, currentStep, variant }) {
   )
 }
 
-export default ImageWave
+export default DeckWave
