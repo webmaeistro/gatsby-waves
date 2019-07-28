@@ -15,7 +15,6 @@ function toColumns(items, columnCount) {
   columns[0].push(null)
   columns[1].push(React.createElement("div", {}, []))
   items.forEach((item, i) => {
-    console.log({ item })
     const isHr = item.props.mdxType === "hr"
     if (isHr) {
       columns[0].push(null)
