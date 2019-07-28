@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, ThemeProvider } from "theme-ui"
+import { jsx } from "theme-ui"
 import React from "react"
 import BarScroller from "gatsby-theme-waves/src/components/bar-scroller"
 import Wave from "gatsby-theme-waves/src/components/wave"

@@ -9,7 +9,7 @@ export default {
       display: ["block", "flex"],
     },
     ScrollerContainer: {
-      flex: 1,
+      flex: [1, "430px"],
       paddingLeft: [0, "50px"],
       paddingTop: ["50px", 0],
     },
@@ -33,6 +33,7 @@ export default {
       top: [0, "auto"],
       zIndex: [1, "auto"],
       height: ["calc(100vw * 9 / 16)", "auto"],
+      fontSize: ["0.8em", "0.8em"],
     },
     Sticker: {
       position: ["static", "sticky"],

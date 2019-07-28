@@ -7,16 +7,9 @@ import variants from "./waves-variant"
 import { Global } from "@emotion/core"
 
 const theme = deepmerge(roboto, {
-  colors: {
-    // primary: "salmon",
-  },
   styles: {
     Container: {
       width: ["100%", "700px"],
-    },
-    root: {
-      // display: "flex",
-      // background: "#121320",
     },
     waves: variants,
   },
