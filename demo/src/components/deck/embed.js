@@ -5,7 +5,6 @@ import Slide from "gatsby-theme-mdx-deck/src/components/slide"
 import Zoom from "gatsby-theme-mdx-deck/src/components/zoom"
 
 const wrapper = ({ slide: i, ratio, zoom, theme, ...props }) => {
-  console.log("wrapper", props)
   const slides = splitSlides(props)
   const slide = slides[i - 1]
 

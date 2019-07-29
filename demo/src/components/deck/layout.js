@@ -19,7 +19,7 @@ theme.breakpoints = ["900px"]
 
 export default props => (
   <ThemeProvider theme={theme}>
-    <Global styles={{ body: { overfowX: "hidden" } }} />
+    <Global styles={{ body: { overflowX: "hidden" } }} />
     <Styled.root>
       <Header codeUrl="https://github.com/pomber/gatsby-theme-waves/tree/master/demo/src/pages/deck" />
       <Container>{props.children}</Container>
