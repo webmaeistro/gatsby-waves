@@ -59,10 +59,30 @@ function DeckWave(props) {
 }
 
 function DeckSticker({ deck, progress, currentStep, variant }) {
+  const prevIndex = Math.floor(progress)
+  const nextIndex = prevIndex + 1
+
   return (
     <div sx={{ variant: `styles.waves.${variant}.StickerContainer` }}>
       <div sx={{ variant: `styles.waves.${variant}.Sticker` }}>
-        <Embed src={MDXRenderer} children={deck.body} slide={currentStep + 1} />
+        <div
+          style={{ transform: `translateY(${(prevIndex - progress) * 50}%)` }}
+        >
+          <Embed
+            src={MDXRenderer}
+            children={deck.body}
+            slide={prevIndex + 1}
+            key={prevIndex}
+            zoom={0.6}
+          />
+          <Embed
+            src={MDXRenderer}
+            children={deck.body}
+            slide={nextIndex + 1}
+            key={nextIndex}
+            zoom={0.6}
+          />
+        </div>
       </div>
     </div>
   )
