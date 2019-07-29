@@ -10,6 +10,8 @@ import imagesWebm from "./media/images.webm"
 import imagesMp4 from "./media/images.mp4"
 import mapsWebm from "./media/maps.webm"
 import mapsMp4 from "./media/maps.mp4"
+import deckWebm from "./media/deck.webm"
+import deckMp4 from "./media/deck.mp4"
 
 import { Link } from "gatsby"
 
@@ -28,8 +30,8 @@ const demos = [
   },
   {
     title: "Deck Wave",
-    webmSrc: mapsWebm,
-    mp4Src: mapsMp4,
+    webmSrc: deckWebm,
+    mp4Src: deckMp4,
     link: "/deck",
   },
   {
