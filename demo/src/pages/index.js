@@ -65,6 +65,7 @@ export default () => {
         />
         <meta name="image" content={image} />
         <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content={`Gatsby Theme Waves Demos`} />
         <meta name="twitter:image" content={image} />
         <meta name="twitter:creator" content="pomber" />
       </Helmet>
