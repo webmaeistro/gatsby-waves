@@ -12,8 +12,9 @@ import mapsWebm from "./media/maps.webm"
 import mapsMp4 from "./media/maps.mp4"
 import deckWebm from "./media/deck.webm"
 import deckMp4 from "./media/deck.mp4"
-
+import image from "./media/home.jpg"
 import { Link } from "gatsby"
+import { Helmet } from "react-helmet"
 
 const demos = [
   {
@@ -56,6 +57,18 @@ const theme = {
 export default () => {
   return (
     <ThemeProvider theme={theme}>
+      <Helmet>
+        <title>Gatsby Theme Waves Demos</title>
+        <meta
+          name="description"
+          content="Bring scrollytelling to your mdx. Animate code, images, charts, maps and more as you scroll."
+        />
+        <meta name="image" content={image} />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content={`Gatsby Theme Waves Demos`} />
+        <meta name="twitter:image" content={image} />
+        <meta name="twitter:creator" content="pomber" />
+      </Helmet>
       <Global
         styles={{ body: { background: "linear-gradient(#f1f1f1, #ddd)" } }}
       />

@@ -5,6 +5,7 @@ import deepmerge from "deepmerge"
 import { ThemeProvider, Styled, Container } from "theme-ui"
 import variants from "./waves-variant"
 import { Global } from "@emotion/core"
+import image from "../../pages/media/deck.png"
 
 const theme = deepmerge(roboto, {
   styles: {
@@ -21,7 +22,11 @@ export default props => (
   <ThemeProvider theme={theme}>
     <Global styles={{ body: { overflowX: "hidden" } }} />
     <Styled.root>
-      <Header codeUrl="https://github.com/pomber/gatsby-theme-waves/tree/master/demo/src/pages/deck" />
+      <Header
+        codeUrl="https://github.com/pomber/gatsby-theme-waves/tree/master/demo/src/pages/deck"
+        title="Deck Wave"
+        image={image}
+      />
       <Container>{props.children}</Container>
     </Styled.root>
   </ThemeProvider>
