@@ -21,6 +21,18 @@ const demos = [
     mp4Src: codeMp4,
   },
   {
+    title: "Maps Wave",
+    webmSrc: mapsWebm,
+    mp4Src: mapsMp4,
+    link: "/maps",
+  },
+  {
+    title: "Deck Wave",
+    webmSrc: mapsWebm,
+    mp4Src: mapsMp4,
+    link: "/deck",
+  },
+  {
     title: "Image Wave",
     webmSrc: imagesWebm,
     mp4Src: imagesMp4,
@@ -31,12 +43,6 @@ const demos = [
     webmSrc: chartsWebm,
     mp4Src: chartsMp4,
     link: "/charts",
-  },
-  {
-    title: "Maps Wave",
-    webmSrc: mapsWebm,
-    mp4Src: mapsMp4,
-    link: "/maps",
   },
 ]
 

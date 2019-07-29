@@ -53,6 +53,7 @@ function Wave({
   variant = "default",
   columnComponents = [],
   childrenToStepColumns,
+  ...rest
 }) {
   const ref = React.useRef()
   const currentStep = useCurrentStep(ref, variant)
@@ -77,6 +78,7 @@ function Wave({
             progress={progress}
             variant={variant}
             currentStep={currentStep}
+            {...rest}
           />
         )
       })}
