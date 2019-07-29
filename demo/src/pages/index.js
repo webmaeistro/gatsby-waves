@@ -58,13 +58,13 @@ export default () => {
   return (
     <ThemeProvider theme={theme}>
       <Helmet>
-        <meta charSet="utf-8" />
         <title>Gatsby Theme Waves Demos</title>
         <meta
           name="description"
           content="Bring scrollytelling to your mdx. Animate code, images, charts, maps and more as you scroll."
         />
         <meta name="image" content={image} />
+        <meta name="twitter:card" content="summary" />
         <meta name="twitter:image" content={image} />
         <meta name="twitter:creator" content="pomber" />
       </Helmet>
