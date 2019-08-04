@@ -10,7 +10,7 @@ export default props => (
   <ThemeProvider theme={theme}>
     <ColorMode />
     <Header
-      codeUrl="https://github.com/pomber/gatsby-theme-waves/tree/master/demo/src/blog/posts"
+      codeUrl="https://github.com/pomber/gatsby-theme-waves/tree/master/demo/blog/posts"
       title="Code Wave"
       image={image}
     />
