@@ -27,9 +27,12 @@
     "pigeon-maps": "^0.13.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "recharts": "^1.6.2"
+    "react-three-fiber": "^2.2.14",
+    "recharts": "^1.6.2",
+    "three": "^0.107.0"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "url-loader": "^2.1.0"
   }
 }
