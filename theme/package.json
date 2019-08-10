@@ -12,10 +12,10 @@
   "peerDependencies": {
     "@emotion/core": "^10.0.14",
     "gatsby": "^2.13.24",
+    "gatsby-plugin-theme-ui": "^0.2.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "theme-ui": "^0.2.2",
-    "gatsby-plugin-theme-ui": "^0.2.2"
+    "theme-ui": "^0.2.2"
   },
   "devDependencies": {
     "gatsby": "^2.13.24",
@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@mdx-js/react": "^1.0.21",
-    "code-surfer": "^2.0.0-alpha.10",
+    "code-surfer": "3.0.0-alpha.0",
     "rebound": "^0.1.0",
     "shell-quote": "^1.6.1"
   },

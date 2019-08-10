@@ -1621,6 +1621,30 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
+"@types/styled-system@*":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-5.0.1.tgz#b0af58267e06c5ea18fbe6977fcc5347a56cc847"
+  integrity sha512-LulwelnGe9yU95yDqB+g9uD0gAn1S3KQyWWKXAOl6uwWtd4lS+q+oGlyHENL+m5zYBNbM5Qi1zoYYLelW29/pg==
+  dependencies:
+    csstype "^2.6.4"
+
+"@types/styled-system__css@*":
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/@types/styled-system__css/-/styled-system__css-5.0.3.tgz#45dd1881d9debef787826d913023a1da875530af"
+  integrity sha512-Vz9OGQn4qDju9bWeK3RzdQ+nNAJbag7P8XhAKxsuoXW2XLF0TdeuDk0FFIzpbmQNo5ffvuRtFNGZlacbkXyyGw==
+  dependencies:
+    csstype "^2.6.6"
+
+"@types/theme-ui@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@types/theme-ui/-/theme-ui-0.2.0.tgz#6ac815ce8974b5650d04e104affc16fc73b54ed7"
+  integrity sha512-ir3sCWszCnlwj1hRk7oREYGeLvASa6XffMsKg9AVCxxiu0Hngg9jUYQF5PPAsi56v9KGdSm1NFTj+Plx2ZfFHg==
+  dependencies:
+    "@types/react" "*"
+    "@types/styled-system" "*"
+    "@types/styled-system__css" "*"
+    csstype "^2.6.6"
+
 "@types/tmp@^0.0.32":
   version "0.0.32"
   resolved "https://registry.yarnpkg.com/@types/tmp/-/tmp-0.0.32.tgz#0d3cb31022f8427ea58c008af32b80da126ca4e3"
@@ -3276,11 +3300,12 @@ code-point-at@^1.0.0:
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
   integrity sha1-DQcLTQQ6W+ozovGkDi7bPZpMz3c=
 
-code-surfer@^2.0.0-alpha.10:
-  version "2.0.0-alpha.10"
-  resolved "https://registry.yarnpkg.com/code-surfer/-/code-surfer-2.0.0-alpha.10.tgz#c75601153484c8ff06b9051aa7af8a8f6cb130a1"
-  integrity sha512-djD5PJBtNjeYYw57xXUohUhn0gihQgNdwOQdseUCp5R0pOKdb3Rohj9qkprLuwSrdNjnL1OHs5R4w9b1x6Atvg==
+code-surfer@3.0.0-alpha.0:
+  version "3.0.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/code-surfer/-/code-surfer-3.0.0-alpha.0.tgz#0cbdf2be6dd6c4aea500301f03bae094bb9a8922"
+  integrity sha512-lgYKXAvIPg8oXsUdhIdUP7j2INZhPm3snwbYF8eVH2nbcQfjk4Ti7CMObpAQCxAU9olJT0xr4XefknRzO9FpeA==
   dependencies:
+    "@types/theme-ui" "^0.2.0"
     array.prototype.flat "^1.2.1"
     diff "^4.0.1"
     prismjs "^1.16.0"
@@ -3945,6 +3970,11 @@ csstype@^2.2.0, csstype@^2.5.7:
   version "2.6.5"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.5.tgz#1cd1dff742ebf4d7c991470ae71e12bb6751e034"
   integrity sha512-JsTaiksRsel5n7XwqPAfB0l3TFKdpjW/kgAELf9vrb5adGA7UCPLajKK5s3nFrcFm3Rkyp/Qkgl73ENc1UY3cA==
+
+csstype@^2.6.4, csstype@^2.6.6:
+  version "2.6.6"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.6.tgz#c34f8226a94bbb10c32cc0d714afdf942291fc41"
+  integrity sha512-RpFbQGUE74iyPgvr46U9t1xoQBM8T4BL8SxrN66Le2xYAPSaDJJKeztV3awugusb3g3G9iL8StmkBBXhcbbXhg==
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
