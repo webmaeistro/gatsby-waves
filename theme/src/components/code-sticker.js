@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, useThemeUI } from "theme-ui"
+import { jsx } from "theme-ui"
 import React from "react"
 import CodeSurfer from "code-surfer/dist/standalone.esm"
 import { readStepFromElement } from "../stuff/step-reader"
@@ -14,10 +14,6 @@ function CodeWave({ steps: stepElements, progress, variant }) {
     []
   )
 
-  const { colorMode, theme: themeUI } = useThemeUI()
-  const codeThemes = themeUI.styles.waves[variant].theme
-  const theme = codeThemes[colorMode] || codeThemes.default
-
   return (
     <div
       sx={{
@@ -31,7 +27,7 @@ function CodeWave({ steps: stepElements, progress, variant }) {
         }}
       >
         <div sx={{ variant: `styles.waves.${variant}.Sticker` }}>
-          <CodeSurfer progress={progress} steps={steps} theme={theme} />
+          <CodeSurfer progress={progress} steps={steps} />
         </div>
       </div>
     </div>
