@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@mdx-js/react": "^1.0.21",
-    "code-surfer": "3.0.0-alpha.0",
+    "code-surfer": "3.0.0-alpha.1",
     "rebound": "^0.1.0",
     "shell-quote": "^1.6.1"
   },
