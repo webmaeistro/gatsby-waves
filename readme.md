@@ -108,15 +108,15 @@ Your set up should look like [this example](https://github.com/pomber/gatsby-the
 
 ### Code Blocks
 
-By default the lines that changed between two consecutive code blocks will be highlighted. You can change it to highlihgt the line (and columns) you want:
+By default the lines that changed between two consecutive code blocks will be highlighted. You can change it to highlight the line (and columns) you want:
 
 ````md
 ```js 1:3,6
-// highlihgts line 1,2,3 and 6
+// highlights line 1,2,3 and 6
 ```
 
 ```js 5[1,3:6],8
-// highlihgts:
+// highlights:
 // columns 1,3,4,5 and 6 from line 5
 // and line 8
 ```
