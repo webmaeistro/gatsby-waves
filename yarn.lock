@@ -1020,12 +1020,12 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@code-surfer/standalone@3.0.0-alpha.2":
-  version "3.0.0-alpha.2"
-  resolved "https://registry.yarnpkg.com/@code-surfer/standalone/-/standalone-3.0.0-alpha.2.tgz#81cbbc7f5ac7d65f36f81119671144e422606687"
-  integrity sha512-24ap+rUBJnIgCcm5wBZw189DLNSHJ8yYlJMzLhOS7n/Z1q7GAMPOam8E5bGOVT8k2xU5eaW/CQ2LuHhmlQZsbg==
+"@code-surfer/standalone@3.0.0-alpha.3":
+  version "3.0.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/@code-surfer/standalone/-/standalone-3.0.0-alpha.3.tgz#d03a46384f2ce431f168126c031b9540a11d1e00"
+  integrity sha512-rRkXMlIGFK4Fr8Y52OIEhp1RuVnbDEIqbzsuxD+jrNRitbRyA1GTEcVX/S5NOzKx9aSAC7qbpdDIcEQ/3Go/xA==
   dependencies:
-    "@code-surfer/step-parser" "3.0.0"
+    "@code-surfer/step-parser" "3.0.0-alpha.3"
     "@types/table" "^4.0.7"
     "@types/theme-ui" "^0.2.2"
     array.prototype.flat "^1.2.1"
@@ -1034,10 +1034,10 @@
     rebound "^0.1.0"
     shell-quote "^1.6.1"
 
-"@code-surfer/step-parser@3.0.0", "@code-surfer/step-parser@3.0.0-alpha.2":
-  version "3.0.0-alpha.2"
-  resolved "https://registry.yarnpkg.com/@code-surfer/step-parser/-/step-parser-3.0.0-alpha.2.tgz#96e85f3fa9d685d5bd1095cc8d89b760d7ae7b6f"
-  integrity sha512-PRp6kTSkCtFFi/t3avmweIKBvu+Ealhy6syFHufRDc8ggaSu3KO5LfrwB41XHSoW+O3nNM/OVy11xuPz5Suglg==
+"@code-surfer/step-parser@3.0.0-alpha.3":
+  version "3.0.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/@code-surfer/step-parser/-/step-parser-3.0.0-alpha.3.tgz#22b81addfa14f34fb82cb06858abc3cb2a354c3f"
+  integrity sha512-LqB7b+8VHQ84ulBh5yRTXyDKVdYRYZ0eLVlR6FnXOwCYBhhSkYntI+za+87WjfWCheRO0wzUdxhhA24fjaOI4g==
   dependencies:
     array.prototype.flat "^1.2.1"
     diff "^4.0.1"

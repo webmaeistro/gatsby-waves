@@ -23,7 +23,7 @@
     "react-dom": "^16.8.6"
   },
   "dependencies": {
-    "@code-surfer/standalone": "3.0.0-alpha.2",
+    "@code-surfer/standalone": "3.0.0-alpha.3",
     "@mdx-js/react": "^1.0.21",
     "rebound": "^0.1.0",
     "shell-quote": "^1.6.1",

@@ -16,7 +16,7 @@
     ]
   },
   "dependencies": {
-    "@code-surfer/step-parser": "3.0.0-alpha.2",
+    "@code-surfer/step-parser": "3.0.0-alpha.3",
     "unist-util-visit": "^2.0.0"
   }
 }
