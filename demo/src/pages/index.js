@@ -125,7 +125,7 @@ function Demo({ title, webmSrc, mp4Src, link, big }) {
         gridColumnStart: big && ["span 1", "span 2"],
       }}
     >
-      <Link to={link}>
+      <Styled.a href={link}>
         <div
           sx={{
             position: "relative",
@@ -169,7 +169,7 @@ function Demo({ title, webmSrc, mp4Src, link, big }) {
             </Styled.h2>
           </div>
         </div>
-      </Link>
+      </Styled.a>
     </div>
   )
 }

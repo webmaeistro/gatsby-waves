@@ -1,0 +1,22 @@
+{
+  "name": "rehype-waves",
+  "version": "0.0.1",
+  "devDependencies": {
+    "@mdx-js/mdx": "^1.4.0",
+    "jest": "^24.9.0",
+    "jest-file-snapshot": "^0.3.7"
+  },
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watch -u"
+  },
+  "jest": {
+    "watchPathIgnorePatterns": [
+      "__file_snapshots__"
+    ]
+  },
+  "dependencies": {
+    "@code-surfer/step-parser": "3.0.0-alpha.2",
+    "unist-util-visit": "^2.0.0"
+  }
+}

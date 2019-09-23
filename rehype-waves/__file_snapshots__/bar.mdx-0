@@ -1,0 +1,34 @@
+/* @jsx mdx */
+import { CodeWave } from "waves";
+
+const makeShortcode = name => function MDXDefaultShortcode(props) {
+  console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope")
+  return <div {...props}/>
+};
+
+const layoutProps = {
+  
+};
+const MDXLayout = "wrapper"
+export default function MDXContent({
+  components,
+  ...props
+}) {
+  return <MDXLayout {...layoutProps} {...props} components={components} mdxType="MDXLayout">
+
+    <h1>{`Hi you`}</h1>
+    <CodeWave x={3} steps={[{
+      code: 'foo'
+    }, {
+      code: 'foo'
+    }]} steps={[]} mdxType="CodeWave">
+      <p>{`Muu mu mu`}</p>
+      <hr></hr>
+      <p>{`lala`}</p>
+    </CodeWave>
+    <p>{`foo`}</p>
+    </MDXLayout>;
+}
+
+;
+MDXContent.isMDXComponent = true;

@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import React from "react"
-import CodeSurfer from "code-surfer/dist/standalone.esm"
+import { CodeSurfer } from "@code-surfer/standalone"
 import { readStepFromElement } from "../stuff/step-reader"
 
 function CodeWave({ steps: stepElements, progress, variant }) {
