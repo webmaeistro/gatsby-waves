@@ -29,6 +29,7 @@ module.exports = {
             },
           },
         ],
+        rehypePlugins: [require("rehype-waves")],
       },
     },
     {

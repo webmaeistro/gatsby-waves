@@ -1,9 +1,7 @@
-// var slugs = require('github-slugger')()
 var visit = require("unist-util-visit");
-// var toString = require('hast-util-to-string')
-// var is = require('hast-util-is-element')
-// var has = require('hast-util-has-property')
-const parser = require("./parser");
+const { parseSteps } = require("@code-surfer/step-parser");
+const { readStepFromElement } = require("./step-reader");
+const Prism = require("prismjs");
 
 module.exports = slug;
 
@@ -11,53 +9,64 @@ function slug() {
   return transformer;
 }
 
-function transformer(tree, ...rest) {
-  // console.log("");
-  // console.log("");
-  // console.log("******** PLUGIN *********");
-  // console.log("");
-
-  // console.log("rest", rest);
-  // console.log("tree", tree);
-
-  // console.log("");
-  // console.log("*************************");
-  // console.log("");
-  // console.log("");
-
-  visit(tree, "jsx", function(node, index, parent) {
+function transformer(tree) {
+  visit(tree, "jsx", (node, index, parent) => {
+    // for each CodeWave
     if (node.value.startsWith("<CodeWave")) {
       const siblings = parent.children;
-      let i = index + 1;
+      const firstChildIndex = index + 1;
+      let i = firstChildIndex;
       let pres = [];
+
+      // find the codeblocks and store them in the `pres` array
       while (i < siblings.length && siblings[i].value !== "</CodeWave>") {
         const sibling = siblings[i];
-        // console.log("->", siblings[i]);
         if (sibling.tagName === "pre") {
           pres.push(sibling);
         }
         i++;
       }
-      const steps = [];
-      pres.forEach((pre, i) => {
-        console.log(pre.children[0]);
-        const step = Object.assign({}, pre.children[0].properties, {
-          code: pre.children[0].children[0].value,
-          lang: "javascript" //TODO
-        });
-        console.log({ step });
-        steps.push(step);
-      });
+      const lastChildIndex = i - 1;
 
-      //TODO normalize lines
-      //TODO some golfing
-      const s = parser.parseSteps(steps, "javascript");
+      if (!pres.length) {
+        return;
+      }
 
-      node.value = node.value.replace(">", ` steps={${JSON.stringify(s)}}>`);
-      // console.log(node);
+      // replace the code blocks and wrap the markdown elements in divs
+      siblings[siblings.indexOf(pres[0])] = { type: "jsx", value: "<div>" };
+      siblings.splice(
+        lastChildIndex,
+        0,
+        { type: "text", value: "\n" },
+        { type: "jsx", value: "</div>" }
+      );
+      for (let prei = 1; prei < pres.length; prei++) {
+        const siblingi = siblings.indexOf(pres[prei]);
+        siblings.splice(
+          siblingi,
+          1,
+          { type: "jsx", value: "</div>" },
+          { type: "text", value: "\n" },
+          { type: "jsx", value: "<div>" }
+        );
+      }
+
+      // parse the codeblocks into input steps
+      const steps = pres.map(readStepFromElement);
+
+      // parse the input steps
+      const lang = steps[0].lang;
+      if (!Prism.languages[lang]) {
+        require(`prismjs/components/prism-${lang}`);
+      }
+
+      const s = parseSteps(steps);
+
+      // pass the parsed steps prop to CodeWave
+      node.value = node.value.replace(
+        ">",
+        ` parsedSteps={${JSON.stringify(s)}}>`
+      );
     }
-    // if (is(node, headings) && !has(node, 'id')) {
-    //   node.properties.id = slugs.slug(toString(node))
-    // }
   });
 }

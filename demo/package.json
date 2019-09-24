@@ -27,7 +27,8 @@
     "pigeon-maps": "^0.13.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "recharts": "^1.6.2"
+    "recharts": "^1.6.2",
+    "rehype-waves": "*"
   },
   "devDependencies": {
     "prettier": "^1.18.2"

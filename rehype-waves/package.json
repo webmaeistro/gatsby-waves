@@ -1,6 +1,12 @@
 {
   "name": "rehype-waves",
-  "version": "0.0.1",
+  "version": "0.1.3",
+  "author": "Rodrigo Pombo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pomber/gatsby-theme-waves.git"
+  },
+  "license": "MIT",
   "devDependencies": {
     "@mdx-js/mdx": "^1.4.0",
     "jest": "^24.9.0",
@@ -17,6 +23,7 @@
   },
   "dependencies": {
     "@code-surfer/step-parser": "3.0.0-alpha.3",
+    "shell-quote": "^1.7.2",
     "unist-util-visit": "^2.0.0"
   }
 }
