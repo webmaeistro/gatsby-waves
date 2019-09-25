@@ -17,11 +17,20 @@ function transformer(tree) {
       const firstChildIndex = index + 1;
       let i = firstChildIndex;
       let pres = [];
+      let nesting = 0;
 
       // find the codeblocks and store them in the `pres` array
       while (i < siblings.length && siblings[i].value !== "</CodeWave>") {
         const sibling = siblings[i];
-        if (sibling.tagName === "pre") {
+
+        if (sibling.type === "jsx" && isOpenTag(sibling.value)) {
+          nesting++;
+        }
+        if (sibling.type === "jsx" && isCloseTag(sibling.value)) {
+          nesting--;
+        }
+
+        if (!nesting && sibling.tagName === "pre") {
           pres.push(sibling);
         }
         i++;
@@ -69,4 +78,12 @@ function transformer(tree) {
       );
     }
   });
+}
+
+function isOpenTag(value) {
+  return /^\s*<([^\/>]*)>\s*$/.test(value);
+}
+
+function isCloseTag(value) {
+  return /^\s*<\/([^\/>]*)>\s*$/.test(value);
 }
