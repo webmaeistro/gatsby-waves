@@ -125,6 +125,6 @@ By default the lines that changed between two consecutive code blocks will be hi
 ## Coming Soon
 
 - Import code from files
-- Better custom code syntax highligthing using theme-ui
+- Better custom code syntax highlighting using theme-ui
 - More waves
 - More docs
