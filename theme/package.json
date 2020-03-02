@@ -26,7 +26,7 @@
     "@code-surfer/standalone": "3.1.0",
     "@mdx-js/react": "^1.5.7",
     "rebound": "^0.1.0",
-    "shell-quote": "^1.7.12",
+    "shell-quote": "^1.7.2",
     "use-spring": "^0.1.1"
   },
   "keywords": [
