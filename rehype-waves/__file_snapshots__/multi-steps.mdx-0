@@ -34,7 +34,9 @@ export default function MDXContent({
         "focusCenter": 0.5,
         "focusCount": 1,
         "longestLineIndex": 0
-      }]
+      }],
+      "maxLineCount": 1,
+      "showNumbers": false
     }} mdxType="CodeWave">
       <div>
         <h1>{`M1`}</h1>
