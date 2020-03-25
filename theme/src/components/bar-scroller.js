@@ -3,7 +3,7 @@ import { jsx } from "theme-ui"
 import { useSpring } from "use-spring"
 
 function Scroller({ steps, currentStep, progress, variant }) {
-  const fasterProgress = useSpring(currentStep, {
+  const [fasterProgress] = useSpring(currentStep, {
     decimals: 3,
     stiffness: 52,
     damping: 14,
