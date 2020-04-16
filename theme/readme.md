@@ -4,12 +4,6 @@
 
 Bring scrollytelling to your mdx. Animate code, images, charts, maps and more as you scroll.
 
-<div align="center">
-<a href="https://waves.pomb.us/blog/post">
-<img alt="gatsby waves demo" src="https://user-images.githubusercontent.com/1911623/62062600-971a5780-b229-11e9-9c13-cd6a265594d1.gif" />
-</a>
-<div><a href="https://waves.pomb.us/">See the live demo</a></div>
-</div>
 
 The MDX looks like this:
 
@@ -104,7 +98,7 @@ You need a Gatsby site with MDX. For example, this is how you add gatsby-theme-w
     </CodeWave>
     ````
 
-Your set up should look like [this example](https://github.com/pomber/gatsby-theme-waves/tree/master/blog-demo).
+Your set up should look like [this example](https://github.com/webmaeistro/gatsby-theme-waves/tree/master/blog-demo).
 
 ### Code Blocks
 
