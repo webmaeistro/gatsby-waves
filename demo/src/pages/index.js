@@ -58,16 +58,16 @@ export default () => {
   return (
     <ThemeProvider theme={theme}>
       <Helmet>
-        <title>Gatsby Theme Waves Demos</title>
+        <title>Gatsby scroll Revolution</title>
         <meta
           name="description"
           content="Bring scrollytelling to your mdx. Animate code, images, charts, maps and more as you scroll."
         />
         <meta name="image" content={image} />
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content={`Gatsby Theme Waves Demos`} />
+        <meta name="twitter:title" content={`Gatsby scroll revolution`} />
         <meta name="twitter:image" content={image} />
-        <meta name="twitter:creator" content="pomber" />
+        <meta name="twitter:creator" content="webmaeistro" />
       </Helmet>
       <Global
         styles={{ body: { background: "linear-gradient(#f1f1f1, #ddd)" } }}
@@ -86,10 +86,10 @@ export default () => {
           <Styled.h1
             sx={{ fontSize: [3, 4], margin: 0, color: "rgba(20,20,20,0.8)" }}
           >
-            Gatsby Theme Waves
+            Gatsby Scroll Revolution
           </Styled.h1>
           <Styled.a
-            href="https://github.com/pomber/gatsby-theme-waves"
+            href="https://github.com/webmaeistro/gatsby-theme-waves"
             sx={{ color: "rgba(20,20,20,0.8)", fontSize: [1, 3] }}
           >
             GitHub

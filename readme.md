@@ -99,7 +99,7 @@ You need a Gatsby site with MDX. For example, this is how you add gatsby-theme-w
     </CodeWave>
     ````
 
-Your set up should look like [this example](https://github.com/pomber/gatsby-theme-waves/tree/master/blog-demo).
+Your set up should look like [this example](https://github.com/webmaeistro/gatsby-theme-waves/tree/master/blog-demo).
 
 ### Code Blocks
 
