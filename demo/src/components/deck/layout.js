@@ -23,7 +23,7 @@ export default props => (
     <Global styles={{ body: { overflowX: "hidden" } }} />
     <Styled.root>
       <Header
-        codeUrl="https://github.com/pomber/gatsby-theme-waves/tree/master/demo/src/pages/deck"
+        codeUrl="https://github.com/webmaeistro/gatsby-theme-waves/tree/master/demo/src/pages/deck"
         title="Deck Wave"
         image={image}
       />

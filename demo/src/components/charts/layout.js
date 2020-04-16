@@ -36,7 +36,7 @@ export default props => (
     <Styled.root>
       <Global styles={{ body: { overflowX: "hidden", margin: 0 } }} />
       <Header
-        codeUrl="https://github.com/pomber/gatsby-theme-waves/tree/master/demo/src/pages/charts"
+        codeUrl="https://github.com/webmaeistro/gatsby-theme-waves/tree/master/demo/src/pages/charts"
         title="Chart Wave"
         image={image}
       />

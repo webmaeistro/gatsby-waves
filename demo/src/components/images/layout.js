@@ -34,7 +34,7 @@ export default props => (
   <ThemeProvider theme={theme}>
     <Styled.root>
       <Header
-        codeUrl="https://github.com/pomber/gatsby-theme-waves/tree/master/demo/src/pages/images"
+        codeUrl="https://github.com/webmaeistro/gatsby-theme-waves/tree/master/demo/src/pages/images"
         title="Image Wave"
         image={image}
       />

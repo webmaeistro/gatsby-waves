@@ -39,7 +39,7 @@ export default props => (
     <Global styles={{ body: { overfowX: "hidden", background: "#121320" } }} />
     <Styled.root>
       <Header
-        codeUrl="https://github.com/pomber/gatsby-theme-waves/tree/master/demo/src/pages/maps"
+        codeUrl="https://github.com/webmaiestro/gatsby-theme-waves/tree/master/demo/src/pages/maps"
         title="Maps Wave"
         image={image}
       />
