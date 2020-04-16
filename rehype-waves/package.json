@@ -1,6 +1,6 @@
 {
   "name": "rehype-waves",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "author": "Martin Andersen <marander@pm.me>",
   "repository": {
     "type": "git",
@@ -22,7 +22,7 @@
     ]
   },
   "dependencies": {
-    "@code-surfer/step-parser": "^3.1.1",
+    "@code-surfer/step-parser": "3.1.1",
     "shell-quote": "^1.7.2",
     "unist-util-visit": "^2.0.0"
   }

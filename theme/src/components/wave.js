@@ -58,7 +58,7 @@ function Wave({
   const ref = React.useRef()
   const currentStep = useCurrentStep(ref, variant)
 
-  const progress = useSpring(currentStep, {
+  const [progress] = useSpring(currentStep, {
     decimals: 3,
     stiffness: 80,
     damping: 48,

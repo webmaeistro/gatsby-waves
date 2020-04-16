@@ -28,7 +28,9 @@ export default function MDXContent({
         "focusCount": 1,
         "longestLineIndex": 0,
         "title": "T"
-      }]
+      }],
+      "maxLineCount": 1,
+      "showNumbers": false
     }} mdxType="CodeWave">
       <div>
         <p>{`Markdown`}</p>

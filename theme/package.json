@@ -23,11 +23,11 @@
     "react-dom": "^16.13.0"
   },
   "dependencies": {
-    "@code-surfer/standalone": "3.1.0",
-    "@mdx-js/react": "^1.5.7",
+    "@code-surfer/standalone": "3.1.1",
+    "@mdx-js/react": "^1.0.21",
     "rebound": "^0.1.0",
-    "shell-quote": "^1.7.2",
-    "use-spring": "^0.1.1"
+    "shell-quote": "^1.6.1",
+    "use-spring": "^0.2.2"
   },
   "keywords": [
     "gatsby",
