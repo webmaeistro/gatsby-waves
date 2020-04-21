@@ -89,7 +89,7 @@ export default () => {
             Gatsby Scroll Revolution
           </Styled.h1>
           <Styled.a
-            href="https://github.com/webmaeistro/gatsby-theme-waves"
+            href="https://github.com/webmaeistro/gatsby-waves"
             sx={{ color: "rgba(20,20,20,0.8)", fontSize: [1, 3] }}
           >
             GitHub
