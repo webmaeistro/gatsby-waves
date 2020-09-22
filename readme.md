@@ -6,7 +6,7 @@ Bring scrollytelling to your mdx. Animate code, images, charts, maps and more as
 
 
 
-The MDX looks like this:
+The MDX looks like this :
 
 ````md
 import { CodeWave } from "gatsby-theme-waves"
