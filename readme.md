@@ -19,7 +19,7 @@ import { CodeWave } from "gatsby-theme-waves"
 
 # Some markdown
 
-```py
+```py 
 # more code
 ```
 
